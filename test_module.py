@@ -19,6 +19,7 @@ class DemographicAnalyzerTestCase(unittest.TestCase):
     def test_percentage_bachelors(self):
         actual = self.data['percentage_bachelors']
         expected = 16.4 
+      
         self.assertAlmostEqual(actual, expected, msg="Expected different value for percentage with Bachelors degrees.")
 
     def test_higher_education_rich(self):
